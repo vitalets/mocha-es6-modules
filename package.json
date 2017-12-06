@@ -2,14 +2,13 @@
   "name": "mocha-es6-modules",
   "version": "0.1.0",
   "scripts": {
-    "server": "http-server . -c-1"
+    "server": "http-server . -c-1",
+    "build": "webpack"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "mocha": "^4.0.1",
-    "webpack": "^3.8.1"
+    "chai": "^4.1.2",
+    "http-server": "^0.10.0",
+    "script-loader": "^0.7.2",
+    "webpack": "^3.10.0"
   }
 }

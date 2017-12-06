@@ -3,19 +3,12 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+    <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
 </head>
 <body>
 <div id="mocha"></div>
-
-<script src="https://unpkg.com/expect.js@0.3.1/index.js"></script>
-<script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
-
-<script>mocha.setup('bdd')</script>
-<script src="test.array.js"></script>
-
-<script>
-    mocha.checkLeaks();
-    mocha.run();
-</script>
+<script type="module" src="setup.js"></script>
+<script type="module" src="run.js"></script>
+<script nomodule src="bundle.js"></script>
 </body>
 </html>
